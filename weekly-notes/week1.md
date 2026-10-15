@@ -68,53 +68,28 @@ Some challenges included:
 ## Lessons
 
 A major lesson from this week is that successful bioinformatics projects begin with biological questions, not software tools.
-71
- 
-72
+
 The literature review helped me realize the importance of understanding:
-73
- 
-74
+
 - What trait is being studied.
-75
 - Which compounds are involved.
-76
 - Which pathways produce those compounds.
-77
 - Which genes may regulate those pathways.
-78
- 
-79
+  
 This framework will guide the next phase of the project.
-80
- 
-81
+
 ## Next Steps
-82
- 
-83
+
 During Week 2, I plan to:
-84
- 
-85
+
 - Investigate biological pathways associated with nutritional traits.
-86
 - Investigate biological pathways associated with medicinal traits.
-87
 - Begin identifying candidate genes.
-88
 - Explore functional annotations associated with key pathways.
-89
 - Create a preliminary candidate gene catalogue.
-90
- 
-91
+  
 ## Personal Takeaway
-92
- 
-93
+
 Before starting this project, I largely viewed *Moringa oleifera* as a highly nutritious and medicinal plant. After spending a week reviewing the literature, I now see it as a valuable model for understanding how genes, pathways, and bioactive compounds interact to produce important biological traits.
-94
- 
-95
+
 This week established the scientific foundation that will support the bioinformatics investigations to follow.
