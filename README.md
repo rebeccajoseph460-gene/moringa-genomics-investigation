@@ -24,8 +24,16 @@ Which genes and biological pathways contribute to the nutritional and medicinal 
 moringa-genomics-investigation/
 │
 ├── README.md
-├── project-proposal.md
-├── literature-review.md
+│
+├── project-proposal/
+│   └── README.md
+│
+├── literature-review/
+│   ├── README.md
+│   ├── nutritional-summary.md
+│   ├── medicinal-summary.md
+│   ├── genomic-resources.md
+│   └── references.md
 │
 ├── weekly-notes/
 │   ├── week1.md
@@ -33,6 +41,7 @@ moringa-genomics-investigation/
 │   └── week3.md
 │
 ├── candidate-genes/
+│   └── README.md
 │
 ├── workflows/
 │
