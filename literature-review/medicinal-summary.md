@@ -2,11 +2,13 @@
 
 ## Introduction
 
-*Moringa oleifera*, commonly known as the miracle tree, has been widely used in traditional medicine for centuries. Various parts of the plant, including the leaves, seeds, roots, flowers, and bark, have been utilized in the management of numerous health conditions. Modern scientific investigations have confirmed the presence of diverse bioactive compounds that contribute to the plant's medicinal properties. 
+*Moringa oleifera*, commonly known as the miracle tree, has been widely used in traditional medicine for centuries. Various parts of the plant, including the leaves, seeds, roots, flowers, and bark, have been utilized in the management of numerous health conditions. Modern scientific investigations have identified a diverse range of bioactive compounds that may contribute to the plant's reported medicinal properties.
 
 The increasing interest in natural products and functional foods has made *Moringa oleifera* an important subject for pharmacological, nutritional, and genomic research. Understanding the molecular basis of these medicinal properties may support the development of novel therapeutic agents, nutraceuticals, and improved crop varieties. 
 
 ## Major Bioactive Compounds
+
+The medicinal properties reported for Moringa oleifera are largely attributed to its diverse phytochemical composition. Several groups of bioactive compounds have been identified and investigated for their potential biological activities.
 
 ### Flavonoids
 
@@ -16,7 +18,7 @@ Flavonoids are among the most important bioactive compounds present in *Moringa 
 - Kaempferol
 - Myricetin
 
-These compounds possess strong antioxidant activity and contribute to the medicinal value of the plant. 
+These compounds have been associated with antioxidant activity and are considered important contributors to the plant's reported medicinal properties. 
 
 ### Phenolic Compounds
 
@@ -40,23 +42,31 @@ Alkaloids are naturally occurring compounds that may contribute to some of the m
 
 ### Antioxidant Activity
 
-Numerous studies have reported significant antioxidant activity in *Moringa oleifera*. The presence of flavonoids, phenolics, carotenoids, and other phytochemicals contributes to the scavenging of reactive oxygen species and helps protect cells from oxidative stress. 
+Numerous studies have reported antioxidant activity in extracts of *Moringa oleifera*. This activity has been associated with the presence of flavonoids, phenolic compounds, carotenoids, and other phytochemicals. These compounds may contribute to the plant's ability to neutralize reactive oxygen species and reduce oxidative stress.
 
 ### Anti-inflammatory Activity
 
-Several investigations have demonstrated that *Moringa oleifera* extracts may help modulate inflammatory responses. This activity is believed to be largely associated with bioactive secondary metabolites such as flavonoids and phenolic compounds. 
+Several studies have investigated the potential anti-inflammatory properties of *Moringa oleifera*. These effects have been associated with various bioactive compounds present in the plant; however, the underlying mechanisms continue to be studied.
 
 ### Antimicrobial Activity
 
-Research has shown that various extracts from *Moringa oleifera* exhibit activity against certain microorganisms. This property contributes to its long-standing use in traditional medicine. 
+Extracts from different parts of *Moringa oleifera* have demonstrated activity against certain microorganisms under experimental conditions. Additional investigations are required to better understand the biological significance and practical applications of these findings.
 
 ### Antidiabetic Activity
 
-Studies have suggested that *Moringa oleifera* may contribute to the regulation of blood glucose levels through various biochemical mechanisms. Further investigation is needed to fully understand the underlying molecular pathways. 
+Research has explored the potential role of *Moringa oleifera* in glucose regulation and metabolic health. While results from experimental studies are promising, further studies are needed to clarify the molecular mechanisms involved.
 
 ### Cardioprotective Activity
 
-Evidence indicates that bioactive compounds within *Moringa oleifera* may support cardiovascular health through antioxidant and protective mechanisms. 
+Some studies have investigated the potential protective effects of *Moringa oleifera* on cardiovascular and metabolic health. These observations have been linked to the plant's phytochemical composition and antioxidant properties, although additional research is required to establish causal relationships.
+
+### Hepatoprotective Potential
+
+Several studies have investigated the potential hepatoprotective (liver-protective) properties of *Moringa oleifera*. These studies suggest that certain phytochemicals, including flavonoids, phenolic compounds, and antioxidants, may contribute to protective effects against oxidative stress and liver damage under experimental conditions. However, additional research is needed to fully understand the underlying mechanisms and clinical relevance.
+
+### Anticancer Potential
+
+Research has explored the potential anticancer activity of compounds isolated from *Moringa oleifera*. Experimental studies have reported effects on cellular processes associated with cancer development, including antioxidant activity and modulation of specific signaling pathways. Nevertheless, most findings remain within laboratory and preclinical settings, and further investigation is required to evaluate therapeutic applications and efficacy in humans.
 
 ---
 
@@ -86,6 +96,8 @@ The medicinal importance of *Moringa oleifera* suggests the involvement of genes
 - Stress-response mechanisms
 - Secondary metabolite regulation
 
+Understanding the genes involved in these pathways may provide insights into the biosynthesis, regulation, and accumulation of bioactive compounds in Moringa oleifera.
+
 Identifying and characterizing these genes may improve understanding of the molecular basis underlying the medicinal properties of the species.
 
 ---
@@ -108,6 +120,14 @@ Special attention should be given to transcription factors and regulatory genes 
 
 ## Conclusion
 
-*Moringa oleifera* contains a wide variety of bioactive compounds with reported antioxidant, anti-inflammatory, antimicrobial, antidiabetic, and cardioprotective activities. These medicinal properties are closely associated with secondary metabolism and specialized biochemical pathways.
+*Moringa oleifera* contains a diverse range of bioactive compounds that have been associated with antioxidant, anti-inflammatory, antimicrobial, and other biological activities in scientific studies.
 
-Future bioinformatics analyses should focus on identifying candidate genes involved in the biosynthesis and regulation of these compounds, providing insights into the genomic basis of the medicinal traits of *Moringa oleifera*. 
+Many of these properties are thought to be linked to secondary metabolites and specialized biochemical pathways. Understanding the genes and pathways involved in the biosynthesis and regulation of these compounds may provide valuable insights into the molecular basis of the nutritional and medicinal traits of *Moringa oleifera*.
+
+Future bioinformatics analyses should focus on identifying candidate genes associated with these pathways and evaluating their potential biological significance.
+
+---
+
+## References
+
+Key references reviewed for this summary are documented in the literature-review/references.md file.
