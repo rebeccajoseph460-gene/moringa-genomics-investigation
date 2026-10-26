@@ -214,11 +214,11 @@ The study aims to:
 - RNA-seq dataset selection
 - HISAT2 alignment
 - Alignment quality assessment
+- BAM sorting
+- BAM indexing
 
 ### In Progress
 
-- BAM sorting
-- BAM indexing
 - BRAKER3 annotation
 
 ### Pending
