@@ -101,29 +101,31 @@ The sorted BAM file was successfully generated and validated.
 
 ---
 
-### 5. Genome Annotation Strategy
+## 5. Genome Annotation Strategy
 
-Because the selected genome assembly did not provide a readily available GTF or GFF annotation suitable for expression analysis, I explored alternative annotation approaches.
+The selected *Moringa oleifera* genome assembly did not provide a readily available GTF or GFF annotation file suitable for RNA-seq expression analysis. As a result, I explored alternative approaches for generating gene annotations.
 
-After evaluating several options, I selected **BRAKER3** for gene prediction and genome annotation using RNA-seq evidence.
+My initial strategy was to use BRAKER3 because it combines genome sequence data and RNA-seq evidence to generate gene predictions and transcript annotations. Given the availability of a high-quality RNA-seq alignment, this appeared to be the most suitable approach.
 
-The annotation workflow combines:
+The annotation workflow was intended to combine:
 
 - Reference genome sequence
-- RNA-seq alignment data
+- RNA-seq alignment evidence
 
-to generate predicted gene models and transcript annotations.
+to generate predicted gene models and transcript annotations for downstream expression analysis.
 
 ---
 
-### 6. BRAKER3 Configuration
+## 6. Annotation Challenges and Alternative Approach
+
+### Initial Annotation Attempt: BRAKER3
 
 BRAKER3 was configured using:
 
 #### Inputs
 
 - *Moringa oleifera* genome FASTA
-- Sorted BAM alignment file
+- Sorted RNA-seq BAM alignment file
 
 #### Parameters
 
@@ -131,67 +133,94 @@ BRAKER3 was configured using:
 - Soft-masked genome: No
 - Output format: GTF
 
+Although the job was successfully submitted and executed, BRAKER3 repeatedly failed during the generation of RNA-seq hints. The software reported that the hints file was empty despite the availability of high-quality RNA-seq alignments.
+
+This result was unexpected because the RNA-seq dataset had already demonstrated excellent alignment statistics, indicating strong compatibility between the sequencing reads and the reference genome.
+
+### Alternative Annotation Strategy: AUGUSTUS
+
+To continue the project without significant delays, I adopted AUGUSTUS as an alternative gene prediction approach.
+
+AUGUSTUS was configured using:
+
+- *Moringa oleifera* reference genome
+- Plant-based prediction model
+- Protein and coding sequence outputs enabled
+
 #### Current Status
 
-✅ Configuration completed
+✅ AUGUSTUS configured
 
-✅ Job successfully submitted
+✅ Job submitted successfully
 
-🔄 BRAKER3 currently running
+🔄 Gene prediction currently running
 
 Expected outputs include:
 
 - Predicted genes
-- Transcript models
-- GTF annotation file
+- Predicted transcript structures
+- Coding sequences (CDS)
+- Predicted protein sequences
+- Annotation files suitable for downstream analysis
 
-These outputs will be used in downstream expression analysis and candidate gene investigation.
+These outputs will provide the annotation resources required for subsequent gene expression and candidate gene analyses.
 
 ---
 
-### 7. GitHub Repository Development
+## 7. GitHub Repository Development
 
-Significant progress was also made on project documentation and repository organization.
+Significant progress was made in organizing and documenting the project repository.
 
-#### Completed
+### Completed
 
 - Updated repository structure.
-- Added workflow documentation.
 - Created candidate gene documentation.
 - Added nutritional trait candidate gene information.
 - Added medicinal trait candidate gene information.
+- Added workflow documentation.
+- Created results documentation.
 - Revised Week 1 progress notes.
-- Updated project README.
+- Created Week 2 progress notes.
+- Updated the main project README.
+- Improved project organization for reproducibility and future updates.
 
-These updates improve project organization and help maintain reproducibility throughout the investigation.
+These improvements have transformed the repository into a more structured and reproducible bioinformatics project.
 
 ---
 
 ## Challenges Encountered
 
-One of the biggest challenges this week was dealing with genome annotation files.
+One of the biggest challenges this week was obtaining suitable annotation resources for gene expression analysis.
 
-After successfully aligning the RNA-seq reads, I expected to move directly into gene quantification. Instead, featureCounts repeatedly failed because the available annotation file did not contain the required genomic features.
+After successfully aligning the RNA-seq reads, I expected to move directly into gene quantification. However, featureCounts repeatedly failed because the available annotation resource lacked the gene features required for counting reads.
 
-This challenge forced me to spend time learning how genome annotations are structured and understanding the differences between various genomic file formats.
+This led me to spend considerable time investigating:
 
-Another challenge was learning how to assess whether alignment jobs had truly succeeded. Using tools such as Samtools Flagstat and Samtools Idxstats helped me develop a better understanding of alignment quality metrics and BAM file validation.
+- Genome annotation formats
+- Differences between FASTA, GBFF, GFF3, and GTF files
+- Gene prediction tools
+- RNA-seq workflow requirements
 
-Despite these challenges, each obstacle provided an opportunity to deepen my understanding of bioinformatics workflows.
+Another challenge was the failure of BRAKER3 despite excellent alignment statistics. This required troubleshooting, evaluating alternative strategies, and ultimately transitioning to AUGUSTUS for gene prediction.
+
+In addition, learning how to interpret alignment metrics and validate BAM files using SAMtools helped strengthen my understanding of RNA-seq quality assessment.
+
+Despite these challenges, each obstacle provided an opportunity to better understand bioinformatics workflows and improve my problem-solving skills.
 
 ---
 
 ## Lessons Learned
 
-This week reinforced that bioinformatics is not simply about running software tools. Success often depends on understanding the biological data, file formats, and relationships between different stages of the workflow.
+This week reinforced that bioinformatics is much more than running software tools.
 
-Some key lessons I learned include:
+Some important lessons I learned include:
 
 - High-quality annotations are just as important as high-quality genome assemblies.
-- Alignment success does not automatically guarantee downstream analyses will work.
-- Quality control should be performed at every major stage.
-- Troubleshooting is an essential part of bioinformatics research.
-- Understanding the purpose of each tool makes problem-solving much easier.
+- Strong alignment statistics do not guarantee that downstream analyses will work automatically.
+- Annotation resources can become a major bottleneck when working with non-model organisms.
+- Quality control should be performed throughout a workflow, not only at the beginning.
+- Troubleshooting and adapting workflows are essential skills in bioinformatics research.
+- Understanding file formats and tool requirements greatly improves problem-solving.
 
 ---
 
@@ -199,40 +228,45 @@ Some key lessons I learned include:
 
 ✅ HISAT2 RNA-seq alignment
 
-✅ Alignment quality assessment using Samtools Flagstat
+✅ Alignment quality assessment using SAMtools Flagstat
 
 ✅ BAM file sorting
 
-✅ BAM statistics generation using Samtools Idxstats
+✅ BAM statistics generation using SAMtools Idxstats
 
 ✅ Candidate gene documentation
 
 ✅ Workflow documentation
 
+✅ Results documentation
+
 ✅ GitHub repository updates
 
-✅ BRAKER3 configuration and submission
+✅ BRAKER3 evaluation and troubleshooting
+
+✅ AUGUSTUS configuration and submission
 
 ---
 
 ## Next Steps
 
-- Monitor BRAKER3 completion.
-- Review generated gene annotations.
-- Run featureCounts using the predicted GTF annotation.
+- Monitor AUGUSTUS completion.
+- Review generated gene predictions and annotation outputs.
+- Identify annotation files suitable for expression analysis.
+- Run featureCounts using the generated annotations.
 - Generate a gene count matrix.
 - Continue candidate gene investigation.
-- Explore expression patterns of genes associated with nutritional and medicinal traits.
+- Explore expression patterns associated with nutritional and medicinal traits.
 - Continue developing the final project report.
 
 ---
 
 ## Personal Takeaway
 
-This week gave me my first real experience building and troubleshooting an RNA-seq workflow from start to finish. There were moments when I felt stuck, especially when featureCounts failed and I realized that the available annotation resources were not suitable for the analysis.
+This week gave me my first real experience building and troubleshooting an RNA-seq analysis workflow.
 
-Working through those challenges taught me much more than if every step had worked perfectly from the beginning. I became more comfortable interpreting alignment statistics, processing BAM files, troubleshooting software outputs, and understanding the importance of genome annotation in RNA-seq analysis.
+At several points I felt stuck, particularly when featureCounts failed and later when BRAKER3 was unable to generate RNA-seq hints despite the successful alignment of over 97% of the sequencing reads. Initially, these setbacks were frustrating, but they ultimately helped me develop a deeper understanding of genome annotation and RNA-seq analysis.
 
-One of the most encouraging moments of the week was seeing that over **97% of the RNA-seq reads mapped successfully** to the *Moringa oleifera* genome. That result confirmed that the dataset and reference genome were compatible and gave me confidence that the project is progressing in the right direction.
+One of the most rewarding moments was confirming that the RNA-seq dataset aligned successfully to the *Moringa oleifera* genome with a mapping rate of 97.46%. That result gave me confidence that the data were suitable for further analysis and that the challenges I encountered were related to annotation rather than data quality.
 
-Although this week involved more troubleshooting than expected, I now have a much clearer understanding of RNA-seq workflows and the practical challenges involved in transforming raw sequencing data into meaningful biological insights.
+More importantly, this week taught me that real-world bioinformatics often involves adapting to unexpected problems, exploring alternative solutions, and learning from failure. Although the workflow did not proceed exactly as planned, I now have a much stronger understanding of RNA-seq analysis, genome annotation, and the practical realities of computational biology research.
