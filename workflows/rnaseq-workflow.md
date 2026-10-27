@@ -1,4 +1,4 @@
-# Project Workflow
+## Workflow
 
 ```text
 Genome Assembly
@@ -15,8 +15,11 @@ AUGUSTUS Gene Prediction
       ↓
 Protein & CDS Extraction
       ↓
-eggNOG Functional Annotation (in progress)
+eggNOG Functional Annotation
       ↓
-Candidate Gene Identification (pending)
+Candidate Gene Identification
       ↓
-Pathway Analysis (pending)
+Pathway Analysis
+      ↓
+Final Report
+```
