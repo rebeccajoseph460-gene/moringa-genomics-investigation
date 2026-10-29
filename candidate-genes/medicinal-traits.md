@@ -1,67 +1,85 @@
 # Medicinal Trait Candidate Genes
 
-Many of the medicinal properties attributed to *Moringa oleifera* are associated with secondary metabolites such as phenolics, flavonoids, and antioxidant compounds.
+Several candidate genes associated with secondary metabolism, sterol metabolism, and bioactive compound modification were identified through functional annotation and pathway analysis.
 
-## Phenylalanine Ammonia-Lyase (PAL)
+---
 
-Function:
+## Sterol 3-beta-glucosyltransferase UGT80A2-like
 
-- Entry point into phenylpropanoid metabolism
+**Gene IDs**
+- JAJFZO010000094.1.g1
+- JAJFZO010000094.1.g182
 
-Potential significance:
+**Function**
 
-Associated with phenolic compound production.
+- Catalyses the glycosylation of plant sterols.
+- Participates in sterol metabolism and modification of biologically active compounds.
 
-## Chalcone Synthase (CHS)
+**Potential Significance**
 
-Function:
+May contribute to the synthesis and modification of phytochemicals associated with the medicinal properties of *Moringa oleifera*.
 
-- Key enzyme in flavonoid biosynthesis
+---
 
-Potential significance:
+## Glycosyltransferase Family 28
 
-May contribute to antioxidant activity.
+**Gene IDs**
+- JAJFZO010000094.1.g181
+- JAJFZO010000094.1.g436
 
-## Chalcone Isomerase (CHI)
+**Function**
 
-Function:
+- Transfers sugar molecules to secondary metabolites.
+- Modifies the stability and biological activity of plant compounds.
 
-- Converts chalcones into flavanones
+**Potential Significance**
 
-Potential significance:
+May contribute to the production and modification of bioactive compounds involved in antioxidant and medicinal activities.
 
-Supports biosynthesis of flavonoids with reported bioactive properties.
+---
 
-## Flavonol Synthase (FLS)
+## Glycosyl Hydrolase Family 1
 
-Function:
+**Gene IDs**
+- JAJFZO010000094.1.g458
+- JAJFZO010000094.1.g459
+- JAJFZO010000094.1.g460
 
-- Flavonol production
+**Function**
 
-Potential significance:
+- Hydrolyses glycosidic bonds in complex molecules.
+- Participates in secondary metabolism and plant defence.
 
-Associated with antioxidant activities.
+**Potential Significance**
 
-## Antioxidant Defense Genes
+Associated with phenylpropanoid biosynthesis and secondary metabolite pathways, which are important sources of antioxidants and medicinal phytochemicals.
 
-### Superoxide Dismutase (SOD)
+---
 
-Function:
+## Associated Medicinal Pathways
 
-- Removal of reactive oxygen species
+### Phenylpropanoid Biosynthesis (ko00940)
 
-### Catalase (CAT)
+This pathway produces phenolic compounds and antioxidants that contribute to plant defence and may support the medicinal properties of *Moringa oleifera*.
 
-Function:
+### Biosynthesis of Secondary Metabolites (ko01110)
 
-- Breakdown of hydrogen peroxide
+This pathway generates diverse bioactive compounds involved in plant protection and stress responses.
 
-### Ascorbate Peroxidase (APX)
+### Sterol Metabolism
 
-Function:
+Sterols contribute to cell membrane structure and may act as precursors for biologically active molecules.
 
-- Cellular antioxidant defense
+---
 
-## Future Analysis
+## Summary
 
-Candidate genes will be screened for expression patterns and biological relevance after RNA-seq analysis.
+The medicinal trait candidate genes identified in this study are primarily involved in:
+
+- Sterol metabolism
+- Secondary metabolite biosynthesis
+- Secondary metabolite modification
+- Phenylpropanoid-associated pathways
+- Plant defence mechanisms
+
+These genes represent promising targets for future studies investigating the molecular basis of the medicinal properties of *Moringa oleifera*.
