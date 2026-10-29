@@ -11,9 +11,3 @@ The genes listed here were selected based on published literature regarding plan
 - Evaluate gene expression patterns from RNA-seq data.
 - Prioritize candidate genes for future functional studies.
 
-## Current Status
-
-- Literature-based candidate genes compiled.
-- RNA-seq alignment completed.
-- Gene annotation in progress.
-- Differential expression analysis pending.
