@@ -2,35 +2,54 @@
 
 ## Nutritional Trait Candidates
 
-| Gene Family | Expected Function |
-|------------|------------------|
-| GS | Nitrogen assimilation |
-| GOGAT | Amino acid biosynthesis |
-| NR | Nitrate reduction |
-| PAL | Phenylpropanoid pathway |
-| CHS | Flavonoid biosynthesis |
-| F3H | Flavonoid biosynthesis |
-| DFR | Anthocyanin biosynthesis |
-| PSY | Carotenoid biosynthesis |
+| Gene ID | Annotation |
+|----------|----------|
+| g155 | Molybdate transporter |
+| g159 | Glycerol-3-phosphate dehydrogenase |
+| g180 | Aminoacyl-tRNA synthetase |
+| g445 | Gluconokinase |
+
+**Associated Functions**
+- Mineral transport
+- Protein biosynthesis
+- Energy metabolism
+- Carbohydrate metabolism
+
+---
 
 ## Medicinal Trait Candidates
 
-| Gene Family | Expected Function |
-|------------|------------------|
-| PAL | Phenolic compound production |
-| CHS | Flavonoid biosynthesis |
-| CHI | Chalcone conversion |
-| FLS | Flavonol biosynthesis |
-| SOD | Oxidative stress protection |
-| CAT | Hydrogen peroxide detoxification |
-| APX | Antioxidant defense |
-| GST | Detoxification pathway |
+| Gene ID | Annotation |
+|----------|----------|
+| g1, g182 | Sterol 3-beta-glucosyltransferase UGT80A2-like |
+| g181, g436 | Glycosyltransferase family 28 |
+| g458, g459, g460 | Glycosyl hydrolase family 1 |
 
-## Future Validation
+**Associated Functions**
+- Sterol metabolism
+- Secondary metabolite biosynthesis
+- Bioactive compound modification
+- Plant defence mechanisms
 
-These candidate genes will be evaluated using:
+---
 
-- Genome annotation
-- Functional annotation
-- Expression profiling
-- Differential expression analysis
+## Regulatory Trait Candidates
+
+| Gene ID |
+|----------|
+| g149, g150, g151, g152 |
+| g161, g171, g437 |
+| g450, g451 |
+
+**Associated Function**
+- Cellular signalling and pathway regulation
+
+---
+
+## Selection Basis
+
+Candidate genes were selected based on:
+
+- eggNOG functional annotation
+- KEGG pathway associations
+- Relevance to nutritional and medicinal traits in *Moringa oleifera*
