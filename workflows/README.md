@@ -56,17 +56,15 @@ Final Report
 
 ✅ Initial candidate gene identification
 
-### In Progress
+✅ Candidate gene prioritisation
 
-🔄 Candidate gene prioritisation
+✅ KEGG pathway extraction and analysis
 
-🔄 KEGG pathway extraction and analysis
+✅ Biological interpretation of candidate genes
+
+✅ Integration of pathway and annotation results
 
 ### Pending
-
-⏳ Biological interpretation of candidate genes
-
-⏳ Integration of pathway and annotation results
 
 ⏳ Final report preparation
 
