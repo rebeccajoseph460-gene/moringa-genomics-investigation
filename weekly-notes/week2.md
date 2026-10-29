@@ -137,90 +137,43 @@ Although the job was successfully submitted and executed, BRAKER3 repeatedly fai
 
 This result was unexpected because the RNA-seq dataset had already demonstrated excellent alignment statistics, indicating strong compatibility between the sequencing reads and the reference genome.
 
-### Alternative Annotation Strategy: AUGUSTUS
+## Alternative Annotation and Functional Annotation
 
-To continue the project without significant delays, I adopted AUGUSTUS as an alternative gene prediction approach.
+Due to challenges with BRAKER3 and annotation compatibility, AUGUSTUS was used for structural genome annotation.
 
-AUGUSTUS was configured using:
+### Results
 
-- *Moringa oleifera* reference genome
-- Plant-based prediction model
-- Protein and coding sequence outputs enabled
+✅ Generated GFF3 annotation file
 
-#### Current Status
+✅ Generated 79,227 CDS sequences
 
-✅ AUGUSTUS configured
+✅ Generated 79,227 protein sequences
 
-✅ Job submitted successfully
+✅ Successfully completed structural annotation
 
-🔄 Gene prediction currently running
+The predicted protein sequences were subsequently analysed using eggNOG-mapper for functional annotation.
 
-Expected outputs include:
+### Functional Annotation Results
 
-- Predicted genes
-- Predicted transcript structures
-- Coding sequences (CDS)
-- Predicted protein sequences
-- Annotation files suitable for downstream analysis
+| Metric | Value |
+|----------|----------|
+| Proteins submitted | 79,227 |
+| Functionally annotated proteins | 34,675 |
+| GO terms assigned | Yes |
+| KEGG pathways assigned | Yes |
 
-These outputs will provide the annotation resources required for subsequent gene expression and candidate gene analyses.
+### Candidate Genes Identified
 
----
+**Nutritional Traits**
+- Molybdate transporter (g155)
+- FAD-dependent glycerol-3-phosphate dehydrogenase (g159)
+- Aminoacyl-tRNA synthetase (g180)
+- Gluconokinase (g445)
 
-## 7. GitHub Repository Development
-
-Significant progress was made in organizing and documenting the project repository.
-
-### Completed
-
-- Updated repository structure.
-- Created candidate gene documentation.
-- Added nutritional trait candidate gene information.
-- Added medicinal trait candidate gene information.
-- Added workflow documentation.
-- Created results documentation.
-- Revised Week 1 progress notes.
-- Created Week 2 progress notes.
-- Updated the main project README.
-- Improved project organization for reproducibility and future updates.
-
-These improvements have transformed the repository into a more structured and reproducible bioinformatics project.
-
----
-
-## Challenges Encountered
-
-One of the biggest challenges this week was obtaining suitable annotation resources for gene expression analysis.
-
-After successfully aligning the RNA-seq reads, I expected to move directly into gene quantification. However, featureCounts repeatedly failed because the available annotation resource lacked the gene features required for counting reads.
-
-This led me to spend considerable time investigating:
-
-- Genome annotation formats
-- Differences between FASTA, GBFF, GFF3, and GTF files
-- Gene prediction tools
-- RNA-seq workflow requirements
-
-Another challenge was the failure of BRAKER3 despite excellent alignment statistics. This required troubleshooting, evaluating alternative strategies, and ultimately transitioning to AUGUSTUS for gene prediction.
-
-In addition, learning how to interpret alignment metrics and validate BAM files using SAMtools helped strengthen my understanding of RNA-seq quality assessment.
-
-Despite these challenges, each obstacle provided an opportunity to better understand bioinformatics workflows and improve my problem-solving skills.
-
----
-
-## Lessons Learned
-
-This week reinforced that bioinformatics is much more than running software tools.
-
-Some important lessons I learned include:
-
-- High-quality annotations are just as important as high-quality genome assemblies.
-- Strong alignment statistics do not guarantee that downstream analyses will work automatically.
-- Annotation resources can become a major bottleneck when working with non-model organisms.
-- Quality control should be performed throughout a workflow, not only at the beginning.
-- Troubleshooting and adapting workflows are essential skills in bioinformatics research.
-- Understanding file formats and tool requirements greatly improves problem-solving.
+**Medicinal Traits**
+- Sterol 3-beta-glucosyltransferase UGT80A2-like (g1, g182)
+- Glycosyltransferase family 28 (g181, g436)
+- Glycosyl hydrolase family 1 (g458, g459, g460)
 
 ---
 
@@ -228,36 +181,44 @@ Some important lessons I learned include:
 
 ✅ HISAT2 RNA-seq alignment
 
-✅ Alignment quality assessment using SAMtools Flagstat
+✅ Alignment quality assessment
 
-✅ BAM file sorting
+✅ BAM sorting and indexing
 
-✅ BAM statistics generation using SAMtools Idxstats
+✅ AUGUSTUS structural annotation
 
-✅ Candidate gene documentation
+✅ GFF3 annotation generation
 
-✅ Workflow documentation
+✅ CDS sequence generation
 
-✅ Results documentation
+✅ Protein sequence generation
 
-✅ GitHub repository updates
+✅ eggNOG functional annotation
 
-✅ BRAKER3 evaluation and troubleshooting
+✅ Candidate gene identification
 
-✅ AUGUSTUS configuration and submission
+✅ GitHub documentation and repository updates
+
+---
+
+## Key Lessons Learned
+
+- Genome annotation is essential for downstream genomic analyses.
+- Successful alignment does not guarantee successful downstream analysis.
+- Functional annotation is critical for assigning biological meaning to predicted genes.
+- Troubleshooting and workflow adaptation are important skills in bioinformatics research.
+- Understanding annotation formats significantly improves project execution.
 
 ---
 
 ## Next Steps
 
-- Monitor AUGUSTUS completion.
-- Review generated gene predictions and annotation outputs.
-- Identify annotation files suitable for expression analysis.
-- Run featureCounts using the generated annotations.
-- Generate a gene count matrix.
-- Continue candidate gene investigation.
-- Explore expression patterns associated with nutritional and medicinal traits.
-- Continue developing the final project report.
+1. Finalize candidate gene prioritization.
+2. Extract KEGG pathway information.
+3. Perform pathway analysis.
+4. Interpret nutritional and medicinal pathways.
+5. Complete result interpretation.
+6. Continue development of the final project report.
 
 ---
 
