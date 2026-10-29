@@ -38,7 +38,7 @@ Final Report
 
 ✅ HISAT2 alignment
 
-✅ SAMtools quality assessment
+✅ Alignment quality assessment using SAMtools
 
 ✅ BAM sorting and indexing
 
@@ -52,18 +52,22 @@ Final Report
 
 ✅ eggNOG seed ortholog search
 
+✅ eggNOG functional annotation
+
+✅ Initial candidate gene identification
+
 ### In Progress
 
-🔄 eggNOG functional annotation
+🔄 Candidate gene prioritisation
+
+🔄 KEGG pathway extraction and analysis
 
 ### Pending
 
-⏳ Candidate gene identification
+⏳ Biological interpretation of candidate genes
 
-⏳ GO term analysis
-
-⏳ KEGG pathway analysis
-
-⏳ Results interpretation
+⏳ Integration of pathway and annotation results
 
 ⏳ Final report preparation
+
+⏳ Project conclusion and recommendations
