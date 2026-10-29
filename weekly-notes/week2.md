@@ -197,6 +197,12 @@ The predicted protein sequences were subsequently analysed using eggNOG-mapper f
 
 ✅ Candidate gene identification
 
+✅ Candidate gene prioritisation
+
+✅ KEGG pathway analysis
+
+✅ Biological interpretation of candidate genes
+
 ✅ GitHub documentation and repository updates
 
 ---
@@ -208,26 +214,34 @@ The predicted protein sequences were subsequently analysed using eggNOG-mapper f
 - Functional annotation is critical for assigning biological meaning to predicted genes.
 - Troubleshooting and workflow adaptation are important skills in bioinformatics research.
 - Understanding annotation formats significantly improves project execution.
+- Pathway analysis helps connect gene functions to complex biological traits.
+- Bioinformatics research requires both computational analysis and biological interpretation.
+
+---
+
+## Overall Progress
+
+By the end of Week 2, the project successfully progressed from RNA-seq processing and genome annotation to functional interpretation of candidate genes and biological pathways. Structural annotation, functional annotation, candidate gene discovery, candidate gene prioritisation, pathway analysis, and biological interpretation were completed, providing a strong foundation for the final reporting stage.
 
 ---
 
 ## Next Steps
 
-1. Finalize candidate gene prioritization.
-2. Extract KEGG pathway information.
-3. Perform pathway analysis.
-4. Interpret nutritional and medicinal pathways.
-5. Complete result interpretation.
-6. Continue development of the final project report.
+1. Complete the final project report.
+2. Review and refine the discussion and conclusion sections.
+3. Prepare recommendations for future research.
+4. Verify all GitHub documentation for accuracy and consistency.
+5. Organize figures and supporting files within the repository.
+6. Conduct a final review of project outputs and findings.
 
 ---
 
 ## Personal Takeaway
 
-This week gave me my first real experience building and troubleshooting an RNA-seq analysis workflow.
+This week represented an important transition from computational data processing to biological interpretation.
 
-At several points I felt stuck, particularly when featureCounts failed and later when BRAKER3 was unable to generate RNA-seq hints despite the successful alignment of over 97% of the sequencing reads. Initially, these setbacks were frustrating, but they ultimately helped me develop a deeper understanding of genome annotation and RNA-seq analysis.
+At several points I encountered challenges, particularly when featureCounts failed due to annotation limitations and when BRAKER3 was unable to generate RNA-seq hints despite the successful alignment of over 97% of the sequencing reads. Although these setbacks initially slowed progress, they ultimately strengthened my understanding of genome annotation, RNA-seq workflows, and bioinformatics troubleshooting.
 
-One of the most rewarding moments was confirming that the RNA-seq dataset aligned successfully to the *Moringa oleifera* genome with a mapping rate of 97.46%. That result gave me confidence that the data were suitable for further analysis and that the challenges I encountered were related to annotation rather than data quality.
+One of the most rewarding milestones was achieving successful functional annotation of 34,675 predicted proteins and identifying candidate genes associated with nutritional and medicinal traits in *Moringa oleifera*. The subsequent KEGG pathway analysis helped connect these genes to biological processes involved in nutrient metabolism, protein biosynthesis, energy production, sterol metabolism, and secondary metabolite biosynthesis.
 
-More importantly, this week taught me that real-world bioinformatics often involves adapting to unexpected problems, exploring alternative solutions, and learning from failure. Although the workflow did not proceed exactly as planned, I now have a much stronger understanding of RNA-seq analysis, genome annotation, and the practical realities of computational biology research.
+More importantly, this week reinforced that bioinformatics research extends beyond running computational tools. It requires interpreting biological meaning from genomic data, evaluating evidence, and adapting analytical strategies when initial approaches do not work as expected. The experience has significantly improved my understanding of genome annotation, functional genomics, pathway analysis, and scientific interpretation of bioinformatics results.
